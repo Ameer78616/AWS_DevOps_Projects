@@ -496,6 +496,11 @@ On Ansible Node:
 
 - We need to create ssh-key for `ansadmin` user and copy the public key to docker host
 
+'''sh
+sudo chown -R ansadmin:ansadmin /home/ansadmin
+sudo chmod 700 /home/ansadmin/.ssh
+'''
+
 ```sh
 sudo su - ansadmin
 ssh-keygen
